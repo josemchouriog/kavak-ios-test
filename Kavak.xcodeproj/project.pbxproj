@@ -8,20 +8,110 @@
 
 /* Begin PBXBuildFile section */
 		435DBD1B22419086002D0A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD1A22419086002D0A9B /* AppDelegate.swift */; };
-		435DBD1D22419086002D0A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD1C22419086002D0A9B /* ViewController.swift */; };
 		435DBD2022419086002D0A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435DBD1E22419086002D0A9B /* Main.storyboard */; };
 		435DBD2222419088002D0A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435DBD2122419088002D0A9B /* Assets.xcassets */; };
 		435DBD2522419088002D0A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435DBD2322419088002D0A9B /* LaunchScreen.storyboard */; };
+		435DBD3322419865002D0A9B /* GnomeSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD3222419865002D0A9B /* GnomeSearchTableViewController.swift */; };
+		435DBD39224199ED002D0A9B /* GnomeSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435DBD37224199ED002D0A9B /* GnomeSearchTableViewCell.xib */; };
+		435DBD3C2241AC88002D0A9B /* GnomeSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD3B2241AC88002D0A9B /* GnomeSearchTableViewCell.swift */; };
+		435DBD412241C530002D0A9B /* Gnome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD402241C530002D0A9B /* Gnome.swift */; };
+		435DBD452243B2E0002D0A9B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD442243B2E0002D0A9B /* WelcomeViewController.swift */; };
+		435DBD472243B32A002D0A9B /* GnomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD462243B32A002D0A9B /* GnomeDetailViewController.swift */; };
+		435DBD4A22444737002D0A9B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD4922444737002D0A9B /* CustomButton.swift */; };
+		436D5CE12244551B00B9CD32 /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CC32244551B00B9CD32 /* SF-Pro-Display-Thin.otf */; };
+		436D5CE22244551B00B9CD32 /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CC42244551B00B9CD32 /* SF-Pro-Display-SemiboldItalic.otf */; };
+		436D5CE32244551B00B9CD32 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CC52244551B00B9CD32 /* SF-Pro-Text-Heavy.otf */; };
+		436D5CE42244551B00B9CD32 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CC62244551B00B9CD32 /* SF-Pro-Display-RegularItalic.otf */; };
+		436D5CE52244551B00B9CD32 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CC72244551B00B9CD32 /* SF-Pro-Display-Light.otf */; };
+		436D5CE62244551B00B9CD32 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CC82244551B00B9CD32 /* SF-Pro-Display-Regular.otf */; };
+		436D5CE72244551B00B9CD32 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CC92244551B00B9CD32 /* SF-Pro-Text-MediumItalic.otf */; };
+		436D5CE82244551B00B9CD32 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CCA2244551B00B9CD32 /* SF-Pro-Display-Bold.otf */; };
+		436D5CE92244551B00B9CD32 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CCB2244551B00B9CD32 /* SF-Pro-Display-Medium.otf */; };
+		436D5CEA2244551B00B9CD32 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CCC2244551B00B9CD32 /* SF-Pro-Display-Heavy.otf */; };
+		436D5CEB2244551B00B9CD32 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CCD2244551B00B9CD32 /* SF-Pro-Text-Light.otf */; };
+		436D5CEC2244551B00B9CD32 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CCE2244551B00B9CD32 /* SF-Pro-Display-Semibold.otf */; };
+		436D5CED2244551B00B9CD32 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CCF2244551B00B9CD32 /* SF-Pro-Text-Regular.otf */; };
+		436D5CEE2244551B00B9CD32 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD02244551B00B9CD32 /* SF-Pro-Text-Bold.otf */; };
+		436D5CEF2244551B00B9CD32 /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD12244551B00B9CD32 /* SF-Pro-Display-MediumItalic.otf */; };
+		436D5CF02244551B00B9CD32 /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD22244551B00B9CD32 /* SF-Pro-Display-HeavyItalic.otf */; };
+		436D5CF12244551B00B9CD32 /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD32244551B00B9CD32 /* SF-Pro-Display-Ultralight.otf */; };
+		436D5CF22244551B00B9CD32 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD42244551B00B9CD32 /* SF-Pro-Display-UltralightItalic.otf */; };
+		436D5CF32244551B00B9CD32 /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD52244551B00B9CD32 /* SF-Pro-Display-LightItalic.otf */; };
+		436D5CF42244551B00B9CD32 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD62244551B00B9CD32 /* SF-Pro-Display-BlackItalic.otf */; };
+		436D5CF52244551B00B9CD32 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD72244551B00B9CD32 /* SF-Pro-Display-Black.otf */; };
+		436D5CF62244551B00B9CD32 /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD82244551B00B9CD32 /* SF-Pro-Text-BoldItalic.otf */; };
+		436D5CF72244551B00B9CD32 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CD92244551B00B9CD32 /* SF-Pro-Text-RegularItalic.otf */; };
+		436D5CF82244551B00B9CD32 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CDA2244551B00B9CD32 /* SF-Pro-Text-Semibold.otf */; };
+		436D5CF92244551B00B9CD32 /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CDB2244551B00B9CD32 /* SF-Pro-Text-HeavyItalic.otf */; };
+		436D5CFA2244551B00B9CD32 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CDC2244551B00B9CD32 /* SF-Pro-Display-ThinItalic.otf */; };
+		436D5CFB2244551B00B9CD32 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CDD2244551B00B9CD32 /* SF-Pro-Text-LightItalic.otf */; };
+		436D5CFC2244551B00B9CD32 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CDE2244551B00B9CD32 /* SF-Pro-Text-Medium.otf */; };
+		436D5CFD2244551B00B9CD32 /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CDF2244551B00B9CD32 /* SF-Pro-Display-BoldItalic.otf */; };
+		436D5CFE2244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CE02244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		436D5D01224457C600B9CD32 /* UIViewController+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D00224457C600B9CD32 /* UIViewController+Kavak.swift */; };
+		436D5D032244E88200B9CD32 /* UIView+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D022244E88200B9CD32 /* UIView+Kavak.swift */; };
+		436D5D0522450F3600B9CD32 /* String+Kavka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0422450F3600B9CD32 /* String+Kavka.swift */; };
+		436D5D072245309600B9CD32 /* UIImageView+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D062245309600B9CD32 /* UIImageView+Kavak.swift */; };
+		436D5D0B224564AB00B9CD32 /* GnomeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0A224564AB00B9CD32 /* GnomeSearch.swift */; };
+		436D5D0E22457B1500B9CD32 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0D22457B1500B9CD32 /* UIUtils.swift */; };
+		436D5D1022459A3000B9CD32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0F22459A3000B9CD32 /* Constants.swift */; };
+		66B7B5D77AE2EEFB7DC6C59A /* Pods_Kavak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CFC6DC84077C47C179CDD8 /* Pods_Kavak.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CB043EE31F79903B185EE38 /* Pods-Kavak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kavak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kavak/Pods-Kavak.debug.xcconfig"; sourceTree = "<group>"; };
+		21CFC6DC84077C47C179CDD8 /* Pods_Kavak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kavak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435DBD1722419086002D0A9B /* Kavak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kavak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435DBD1A22419086002D0A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		435DBD1C22419086002D0A9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		435DBD1F22419086002D0A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		435DBD2122419088002D0A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435DBD2422419088002D0A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435DBD2622419088002D0A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435DBD3222419865002D0A9B /* GnomeSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeSearchTableViewController.swift; sourceTree = "<group>"; };
+		435DBD37224199ED002D0A9B /* GnomeSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GnomeSearchTableViewCell.xib; sourceTree = "<group>"; };
+		435DBD3B2241AC88002D0A9B /* GnomeSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeSearchTableViewCell.swift; sourceTree = "<group>"; };
+		435DBD402241C530002D0A9B /* Gnome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gnome.swift; sourceTree = "<group>"; };
+		435DBD442243B2E0002D0A9B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		435DBD462243B32A002D0A9B /* GnomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailViewController.swift; sourceTree = "<group>"; };
+		435DBD4922444737002D0A9B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		436D5CC32244551B00B9CD32 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		436D5CC42244551B00B9CD32 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		436D5CC52244551B00B9CD32 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		436D5CC62244551B00B9CD32 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		436D5CC72244551B00B9CD32 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		436D5CC82244551B00B9CD32 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		436D5CC92244551B00B9CD32 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		436D5CCA2244551B00B9CD32 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		436D5CCB2244551B00B9CD32 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		436D5CCC2244551B00B9CD32 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		436D5CCD2244551B00B9CD32 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		436D5CCE2244551B00B9CD32 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		436D5CCF2244551B00B9CD32 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		436D5CD02244551B00B9CD32 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		436D5CD12244551B00B9CD32 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		436D5CD22244551B00B9CD32 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		436D5CD32244551B00B9CD32 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		436D5CD42244551B00B9CD32 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		436D5CD52244551B00B9CD32 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		436D5CD62244551B00B9CD32 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		436D5CD72244551B00B9CD32 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		436D5CD82244551B00B9CD32 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		436D5CD92244551B00B9CD32 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		436D5CDA2244551B00B9CD32 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		436D5CDB2244551B00B9CD32 /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		436D5CDC2244551B00B9CD32 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		436D5CDD2244551B00B9CD32 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		436D5CDE2244551B00B9CD32 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		436D5CDF2244551B00B9CD32 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		436D5CE02244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		436D5D00224457C600B9CD32 /* UIViewController+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Kavak.swift"; sourceTree = "<group>"; };
+		436D5D022244E88200B9CD32 /* UIView+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Kavak.swift"; sourceTree = "<group>"; };
+		436D5D0422450F3600B9CD32 /* String+Kavka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Kavka.swift"; sourceTree = "<group>"; };
+		436D5D062245309600B9CD32 /* UIImageView+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Kavak.swift"; sourceTree = "<group>"; };
+		436D5D0A224564AB00B9CD32 /* GnomeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeSearch.swift; sourceTree = "<group>"; };
+		436D5D0D22457B1500B9CD32 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		436D5D0F22459A3000B9CD32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E93BF6CDCC5A45C092D47F7 /* Pods-Kavak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kavak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kavak/Pods-Kavak.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B7B5D77AE2EEFB7DC6C59A /* Pods_Kavak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +131,8 @@
 			children = (
 				435DBD1922419086002D0A9B /* Kavak */,
 				435DBD1822419086002D0A9B /* Products */,
+				8656CE227F53D19117A0FD9D /* Pods */,
+				C0AB95AFC7F73E7522DB8A2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +147,162 @@
 		435DBD1922419086002D0A9B /* Kavak */ = {
 			isa = PBXGroup;
 			children = (
+				436D5D0C22457AF900B9CD32 /* Utils */,
+				436D5D092245643000B9CD32 /* Network */,
+				436D5D08224563ED00B9CD32 /* Featues */,
+				436D5CFF2244579C00B9CD32 /* Extensions */,
+				436D5CC22244551B00B9CD32 /* Fonts */,
+				435DBD48224446F3002D0A9B /* CustomUI */,
 				435DBD1A22419086002D0A9B /* AppDelegate.swift */,
-				435DBD1C22419086002D0A9B /* ViewController.swift */,
 				435DBD1E22419086002D0A9B /* Main.storyboard */,
 				435DBD2122419088002D0A9B /* Assets.xcassets */,
 				435DBD2322419088002D0A9B /* LaunchScreen.storyboard */,
 				435DBD2622419088002D0A9B /* Info.plist */,
 			);
 			path = Kavak;
+			sourceTree = "<group>";
+		};
+		435DBD2E224197F9002D0A9B /* GnomeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				435DBD2F22419825002D0A9B /* ViewControllers */,
+				435DBD3A22419AC8002D0A9B /* Nibs */,
+				435DBD35224199A1002D0A9B /* Views */,
+				435DBD3D2241C439002D0A9B /* Models */,
+			);
+			path = GnomeSearch;
+			sourceTree = "<group>";
+		};
+		435DBD2F22419825002D0A9B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				435DBD442243B2E0002D0A9B /* WelcomeViewController.swift */,
+				435DBD3222419865002D0A9B /* GnomeSearchTableViewController.swift */,
+				435DBD462243B32A002D0A9B /* GnomeDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		435DBD35224199A1002D0A9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				435DBD3B2241AC88002D0A9B /* GnomeSearchTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		435DBD3A22419AC8002D0A9B /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				435DBD37224199ED002D0A9B /* GnomeSearchTableViewCell.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		435DBD3D2241C439002D0A9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				435DBD402241C530002D0A9B /* Gnome.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		435DBD48224446F3002D0A9B /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				435DBD4922444737002D0A9B /* CustomButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		436D5CC22244551B00B9CD32 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				436D5CC32244551B00B9CD32 /* SF-Pro-Display-Thin.otf */,
+				436D5CC42244551B00B9CD32 /* SF-Pro-Display-SemiboldItalic.otf */,
+				436D5CC52244551B00B9CD32 /* SF-Pro-Text-Heavy.otf */,
+				436D5CC62244551B00B9CD32 /* SF-Pro-Display-RegularItalic.otf */,
+				436D5CC72244551B00B9CD32 /* SF-Pro-Display-Light.otf */,
+				436D5CC82244551B00B9CD32 /* SF-Pro-Display-Regular.otf */,
+				436D5CC92244551B00B9CD32 /* SF-Pro-Text-MediumItalic.otf */,
+				436D5CCA2244551B00B9CD32 /* SF-Pro-Display-Bold.otf */,
+				436D5CCB2244551B00B9CD32 /* SF-Pro-Display-Medium.otf */,
+				436D5CCC2244551B00B9CD32 /* SF-Pro-Display-Heavy.otf */,
+				436D5CCD2244551B00B9CD32 /* SF-Pro-Text-Light.otf */,
+				436D5CCE2244551B00B9CD32 /* SF-Pro-Display-Semibold.otf */,
+				436D5CCF2244551B00B9CD32 /* SF-Pro-Text-Regular.otf */,
+				436D5CD02244551B00B9CD32 /* SF-Pro-Text-Bold.otf */,
+				436D5CD12244551B00B9CD32 /* SF-Pro-Display-MediumItalic.otf */,
+				436D5CD22244551B00B9CD32 /* SF-Pro-Display-HeavyItalic.otf */,
+				436D5CD32244551B00B9CD32 /* SF-Pro-Display-Ultralight.otf */,
+				436D5CD42244551B00B9CD32 /* SF-Pro-Display-UltralightItalic.otf */,
+				436D5CD52244551B00B9CD32 /* SF-Pro-Display-LightItalic.otf */,
+				436D5CD62244551B00B9CD32 /* SF-Pro-Display-BlackItalic.otf */,
+				436D5CD72244551B00B9CD32 /* SF-Pro-Display-Black.otf */,
+				436D5CD82244551B00B9CD32 /* SF-Pro-Text-BoldItalic.otf */,
+				436D5CD92244551B00B9CD32 /* SF-Pro-Text-RegularItalic.otf */,
+				436D5CDA2244551B00B9CD32 /* SF-Pro-Text-Semibold.otf */,
+				436D5CDB2244551B00B9CD32 /* SF-Pro-Text-HeavyItalic.otf */,
+				436D5CDC2244551B00B9CD32 /* SF-Pro-Display-ThinItalic.otf */,
+				436D5CDD2244551B00B9CD32 /* SF-Pro-Text-LightItalic.otf */,
+				436D5CDE2244551B00B9CD32 /* SF-Pro-Text-Medium.otf */,
+				436D5CDF2244551B00B9CD32 /* SF-Pro-Display-BoldItalic.otf */,
+				436D5CE02244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		436D5CFF2244579C00B9CD32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				436D5D00224457C600B9CD32 /* UIViewController+Kavak.swift */,
+				436D5D022244E88200B9CD32 /* UIView+Kavak.swift */,
+				436D5D0422450F3600B9CD32 /* String+Kavka.swift */,
+				436D5D062245309600B9CD32 /* UIImageView+Kavak.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		436D5D08224563ED00B9CD32 /* Featues */ = {
+			isa = PBXGroup;
+			children = (
+				435DBD2E224197F9002D0A9B /* GnomeSearch */,
+			);
+			path = Featues;
+			sourceTree = "<group>";
+		};
+		436D5D092245643000B9CD32 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				436D5D0A224564AB00B9CD32 /* GnomeSearch.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		436D5D0C22457AF900B9CD32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				436D5D0D22457B1500B9CD32 /* UIUtils.swift */,
+				436D5D0F22459A3000B9CD32 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8656CE227F53D19117A0FD9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CB043EE31F79903B185EE38 /* Pods-Kavak.debug.xcconfig */,
+				5E93BF6CDCC5A45C092D47F7 /* Pods-Kavak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0AB95AFC7F73E7522DB8A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21CFC6DC84077C47C179CDD8 /* Pods_Kavak.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 435DBD2922419088002D0A9B /* Build configuration list for PBXNativeTarget "Kavak" */;
 			buildPhases = (
+				A2DF2A817187F09ED5C34372 /* [CP] Check Pods Manifest.lock */,
 				435DBD1322419086002D0A9B /* Sources */,
 				435DBD1422419086002D0A9B /* Frameworks */,
 				435DBD1522419086002D0A9B /* Resources */,
+				D0D3FCFA06733F1DCCB12A19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +365,105 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436D5CF62244551B00B9CD32 /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				436D5CE12244551B00B9CD32 /* SF-Pro-Display-Thin.otf in Resources */,
+				435DBD39224199ED002D0A9B /* GnomeSearchTableViewCell.xib in Resources */,
+				436D5CEF2244551B00B9CD32 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				436D5CFC2244551B00B9CD32 /* SF-Pro-Text-Medium.otf in Resources */,
+				436D5CE82244551B00B9CD32 /* SF-Pro-Display-Bold.otf in Resources */,
+				436D5CE92244551B00B9CD32 /* SF-Pro-Display-Medium.otf in Resources */,
+				436D5CE22244551B00B9CD32 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				436D5CE32244551B00B9CD32 /* SF-Pro-Text-Heavy.otf in Resources */,
+				436D5CF52244551B00B9CD32 /* SF-Pro-Display-Black.otf in Resources */,
+				436D5CFE2244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				436D5CF42244551B00B9CD32 /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				436D5CF22244551B00B9CD32 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				436D5CE52244551B00B9CD32 /* SF-Pro-Display-Light.otf in Resources */,
+				436D5CE42244551B00B9CD32 /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				436D5CF12244551B00B9CD32 /* SF-Pro-Display-Ultralight.otf in Resources */,
+				436D5CEE2244551B00B9CD32 /* SF-Pro-Text-Bold.otf in Resources */,
+				436D5CEC2244551B00B9CD32 /* SF-Pro-Display-Semibold.otf in Resources */,
+				436D5CFB2244551B00B9CD32 /* SF-Pro-Text-LightItalic.otf in Resources */,
+				436D5CFD2244551B00B9CD32 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				435DBD2522419088002D0A9B /* LaunchScreen.storyboard in Resources */,
+				436D5CEA2244551B00B9CD32 /* SF-Pro-Display-Heavy.otf in Resources */,
+				436D5CE72244551B00B9CD32 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				435DBD2222419088002D0A9B /* Assets.xcassets in Resources */,
+				436D5CF82244551B00B9CD32 /* SF-Pro-Text-Semibold.otf in Resources */,
+				436D5CED2244551B00B9CD32 /* SF-Pro-Text-Regular.otf in Resources */,
+				436D5CE62244551B00B9CD32 /* SF-Pro-Display-Regular.otf in Resources */,
 				435DBD2022419086002D0A9B /* Main.storyboard in Resources */,
+				436D5CF32244551B00B9CD32 /* SF-Pro-Display-LightItalic.otf in Resources */,
+				436D5CF92244551B00B9CD32 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				436D5CEB2244551B00B9CD32 /* SF-Pro-Text-Light.otf in Resources */,
+				436D5CF72244551B00B9CD32 /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				436D5CFA2244551B00B9CD32 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				436D5CF02244551B00B9CD32 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2DF2A817187F09ED5C34372 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kavak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D3FCFA06733F1DCCB12A19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kavak/Pods-Kavak-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kavak/Pods-Kavak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		435DBD1322419086002D0A9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435DBD1D22419086002D0A9B /* ViewController.swift in Sources */,
+				435DBD412241C530002D0A9B /* Gnome.swift in Sources */,
+				435DBD452243B2E0002D0A9B /* WelcomeViewController.swift in Sources */,
+				436D5D032244E88200B9CD32 /* UIView+Kavak.swift in Sources */,
+				435DBD3322419865002D0A9B /* GnomeSearchTableViewController.swift in Sources */,
 				435DBD1B22419086002D0A9B /* AppDelegate.swift in Sources */,
+				435DBD4A22444737002D0A9B /* CustomButton.swift in Sources */,
+				436D5D01224457C600B9CD32 /* UIViewController+Kavak.swift in Sources */,
+				436D5D072245309600B9CD32 /* UIImageView+Kavak.swift in Sources */,
+				435DBD472243B32A002D0A9B /* GnomeDetailViewController.swift in Sources */,
+				436D5D0B224564AB00B9CD32 /* GnomeSearch.swift in Sources */,
+				435DBD3C2241AC88002D0A9B /* GnomeSearchTableViewCell.swift in Sources */,
+				436D5D1022459A3000B9CD32 /* Constants.swift in Sources */,
+				436D5D0522450F3600B9CD32 /* String+Kavka.swift in Sources */,
+				436D5D0E22457B1500B9CD32 /* UIUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +607,12 @@
 		};
 		435DBD2A22419088002D0A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB043EE31F79903B185EE38 /* Pods-Kavak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Kavak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +620,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mycompany.Kavak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		435DBD2B22419088002D0A9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E93BF6CDCC5A45C092D47F7 /* Pods-Kavak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Kavak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mycompany.Kavak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

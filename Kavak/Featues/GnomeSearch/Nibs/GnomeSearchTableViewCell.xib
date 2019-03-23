@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GnomeSearchTableViewCell" id="KGk-i7-Jjw" customClass="GnomeSearchTableViewCell" customModule="Kavak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWelcomeGnome" translatesAutoresizingMaskIntoConstraints="NO" id="9na-hC-XhI">
+                        <rect key="frame" x="15" y="7" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="jzf-ja-yYf"/>
+                            <constraint firstAttribute="height" constant="45" id="up6-TL-y9w"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minabonk Voidslicer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVv-Yl-Bog">
+                        <rect key="frame" x="70" y="10" width="161.5" height="20"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwS-Aw-7uM">
+                        <rect key="frame" x="70" y="33" width="242" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AVv-Yl-Bog" secondAttribute="trailing" constant="8" id="01E-X5-bJN"/>
+                    <constraint firstItem="AVv-Yl-Bog" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9NC-pc-3R1"/>
+                    <constraint firstItem="AVv-Yl-Bog" firstAttribute="leading" secondItem="9na-hC-XhI" secondAttribute="trailing" constant="10" id="Mt5-Ip-Tij"/>
+                    <constraint firstItem="IwS-Aw-7uM" firstAttribute="leading" secondItem="AVv-Yl-Bog" secondAttribute="leading" id="MyS-27-ev1"/>
+                    <constraint firstItem="9na-hC-XhI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="NEp-6r-38T"/>
+                    <constraint firstItem="9na-hC-XhI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Sbu-Pd-FVh"/>
+                    <constraint firstItem="IwS-Aw-7uM" firstAttribute="top" secondItem="AVv-Yl-Bog" secondAttribute="bottom" constant="3" id="rXq-uk-C3A"/>
+                    <constraint firstAttribute="trailing" secondItem="IwS-Aw-7uM" secondAttribute="trailing" constant="8" id="tqJ-P0-V67"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="lblAge" destination="IwS-Aw-7uM" id="vBF-cs-1dC"/>
+                <outlet property="lblName" destination="AVv-Yl-Bog" id="H61-Pu-vMt"/>
+                <outlet property="picture" destination="9na-hC-XhI" id="DO6-NZ-S3F"/>
+            </connections>
+            <point key="canvasLocation" x="-64" y="144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icWelcomeGnome" width="512" height="512"/>
+    </resources>
+</document>
