@@ -50,7 +50,7 @@
 		436D5CFE2244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 436D5CE02244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf */; };
 		436D5D01224457C600B9CD32 /* UIViewController+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D00224457C600B9CD32 /* UIViewController+Kavak.swift */; };
 		436D5D032244E88200B9CD32 /* UIView+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D022244E88200B9CD32 /* UIView+Kavak.swift */; };
-		436D5D0522450F3600B9CD32 /* String+Kavka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0422450F3600B9CD32 /* String+Kavka.swift */; };
+		436D5D0522450F3600B9CD32 /* String+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0422450F3600B9CD32 /* String+Kavak.swift */; };
 		436D5D072245309600B9CD32 /* UIImageView+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D062245309600B9CD32 /* UIImageView+Kavak.swift */; };
 		436D5D0B224564AB00B9CD32 /* GnomeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0A224564AB00B9CD32 /* GnomeSearch.swift */; };
 		436D5D0E22457B1500B9CD32 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D5D0D22457B1500B9CD32 /* UIUtils.swift */; };
@@ -106,7 +106,7 @@
 		436D5CE02244551B00B9CD32 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		436D5D00224457C600B9CD32 /* UIViewController+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Kavak.swift"; sourceTree = "<group>"; };
 		436D5D022244E88200B9CD32 /* UIView+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Kavak.swift"; sourceTree = "<group>"; };
-		436D5D0422450F3600B9CD32 /* String+Kavka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Kavka.swift"; sourceTree = "<group>"; };
+		436D5D0422450F3600B9CD32 /* String+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Kavak.swift"; sourceTree = "<group>"; };
 		436D5D062245309600B9CD32 /* UIImageView+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Kavak.swift"; sourceTree = "<group>"; };
 		436D5D0A224564AB00B9CD32 /* GnomeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeSearch.swift; sourceTree = "<group>"; };
 		436D5D0D22457B1500B9CD32 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 			children = (
 				436D5D00224457C600B9CD32 /* UIViewController+Kavak.swift */,
 				436D5D022244E88200B9CD32 /* UIView+Kavak.swift */,
-				436D5D0422450F3600B9CD32 /* String+Kavka.swift */,
+				436D5D0422450F3600B9CD32 /* String+Kavak.swift */,
 				436D5D062245309600B9CD32 /* UIImageView+Kavak.swift */,
 			);
 			path = Extensions;
@@ -462,7 +462,7 @@
 				436D5D0B224564AB00B9CD32 /* GnomeSearch.swift in Sources */,
 				435DBD3C2241AC88002D0A9B /* GnomeSearchTableViewCell.swift in Sources */,
 				436D5D1022459A3000B9CD32 /* Constants.swift in Sources */,
-				436D5D0522450F3600B9CD32 /* String+Kavka.swift in Sources */,
+				436D5D0522450F3600B9CD32 /* String+Kavak.swift in Sources */,
 				436D5D0E22457B1500B9CD32 /* UIUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
