@@ -151,7 +151,7 @@
 			children = (
 				436D5D0C22457AF900B9CD32 /* Utils */,
 				436D5D092245643000B9CD32 /* Network */,
-				436D5D08224563ED00B9CD32 /* Featues */,
+				436D5D08224563ED00B9CD32 /* Features */,
 				436D5CFF2244579C00B9CD32 /* Extensions */,
 				436D5CC22244551B00B9CD32 /* Fonts */,
 				435DBD48224446F3002D0A9B /* CustomUI */,
@@ -266,12 +266,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		436D5D08224563ED00B9CD32 /* Featues */ = {
+		436D5D08224563ED00B9CD32 /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				435DBD2E224197F9002D0A9B /* GnomeSearch */,
 			);
-			path = Featues;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		436D5D092245643000B9CD32 /* Network */ = {
