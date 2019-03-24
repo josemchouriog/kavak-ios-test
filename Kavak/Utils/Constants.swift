@@ -57,6 +57,19 @@ struct Constants {
         static let RequestResultDictionaryKey = "Brastlewark"
     }
     
+    struct Measurement {
+        static let Kilograms = "kg"
+        static let Centimeters = "cm"
+        static let Meters = "mt"
+    }
     
-    
+    struct ProfileMessage {
+        static let NoName = "It seems that this gnome does not have a name"
+        static let NoAge = "This gnome does not want us to know its age"
+        static let NoHairColor = "This gnome does not want us to know its hair color"
+        static let NoProfession = "This gnome is not working right now, but is trying hard to get a job"
+        static let NoFriend = "This gnome does not seem very sociable because it has no friends"
+        static let ZeroValue = "0"
+        static let Age = "years old"
+    }
 }
