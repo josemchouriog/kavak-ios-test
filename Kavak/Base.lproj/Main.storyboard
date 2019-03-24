@@ -51,7 +51,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icGenomeCity" translatesAutoresizingMaskIntoConstraints="NO" id="Mqr-Cp-43D">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icGnomeCity" translatesAutoresizingMaskIntoConstraints="NO" id="Mqr-Cp-43D">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Brastlewark" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxP-S8-9hK">
@@ -457,7 +457,7 @@
     <resources>
         <image name="icAdventurer" width="485.05264282226562" height="485.05264282226562"/>
         <image name="icFriendship" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="icGenomeCity" width="4500" height="2435"/>
+        <image name="icGnomeCity" width="4500" height="2435"/>
         <image name="icHairColor" width="409.60000610351562" height="409.60000610351562"/>
         <image name="icHeight" width="315.07693481445312" height="315.07693481445312"/>
         <image name="icProfession" width="433.69412231445312" height="433.69412231445312"/>
