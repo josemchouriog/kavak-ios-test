@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431B396E22472B1100ED7884 /* Float+Kavak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B396D22472B1100ED7884 /* Float+Kavak.swift */; };
 		435DBD1B22419086002D0A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DBD1A22419086002D0A9B /* AppDelegate.swift */; };
 		435DBD2022419086002D0A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435DBD1E22419086002D0A9B /* Main.storyboard */; };
 		435DBD2222419088002D0A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435DBD2122419088002D0A9B /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		0CB043EE31F79903B185EE38 /* Pods-Kavak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kavak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kavak/Pods-Kavak.debug.xcconfig"; sourceTree = "<group>"; };
 		21CFC6DC84077C47C179CDD8 /* Pods_Kavak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kavak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431B396D22472B1100ED7884 /* Float+Kavak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Kavak.swift"; sourceTree = "<group>"; };
 		435DBD1722419086002D0A9B /* Kavak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kavak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435DBD1A22419086002D0A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435DBD1F22419086002D0A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				436D5D022244E88200B9CD32 /* UIView+Kavak.swift */,
 				436D5D0422450F3600B9CD32 /* String+Kavak.swift */,
 				436D5D062245309600B9CD32 /* UIImageView+Kavak.swift */,
+				431B396D22472B1100ED7884 /* Float+Kavak.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				435DBD4A22444737002D0A9B /* CustomButton.swift in Sources */,
 				436D5D01224457C600B9CD32 /* UIViewController+Kavak.swift in Sources */,
 				436D5D072245309600B9CD32 /* UIImageView+Kavak.swift in Sources */,
+				431B396E22472B1100ED7884 /* Float+Kavak.swift in Sources */,
 				435DBD472243B32A002D0A9B /* GnomeDetailViewController.swift in Sources */,
 				436D5D0B224564AB00B9CD32 /* GnomeSearch.swift in Sources */,
 				435DBD3C2241AC88002D0A9B /* GnomeSearchTableViewCell.swift in Sources */,

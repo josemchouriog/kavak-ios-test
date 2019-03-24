@@ -12,26 +12,25 @@ import SDWebImage
 class GnomeSearchTableViewController: UITableViewController {
     
     //MARK: ViewController's Variables
-    
     /**
-     This array has all the data brought from the inital request. It is sorted by name asc
+        This array has all the data brought from the inital request. It is sorted by name asc
      
-     ## Important Note ##
-     It is used to show the data when the user is searching(filtering) the information  by a specific term entered on the searchController
-     */
+        ## Important Note ##
+        It is used to show the data when the user is searching(filtering) the information  by a specific term entered on the searchController
+    */
     var gnomesArray = [Gnome]()
     
     /**
-     This is an array of arrays. Each array contains an array of gnomes indexed by the first letter of the name.
+        This is an array of arrays. Each array contains an array of gnomes indexed by the first letter of the name.
      
-     ## Important Note ##
-     It is used to show the data when the user is not searching(filtering) and with the section titles shown in the right side of the TableView. Each array corresponds to a section defined on the lettersArray
-     */
+        ## Important Note ##
+        It is used to show the data when the user is not searching(filtering) and with the section titles shown in the right side of the TableView. Each array corresponds to a section defined on the lettersArray
+    */
     var gnomesIndexedByNameArray = [[Gnome]]()
     
     /**
-     This is an array that contains the results produced by an user search with a specific term entered on the searchController.
-     */
+        This is an array that contains the results produced by an user search with a specific term entered on the searchController.
+    */
     var userSearchResultsArray = [Gnome]()
     var gnomesNamesInitialLettersArray = [String]()
    
@@ -49,7 +48,7 @@ class GnomeSearchTableViewController: UITableViewController {
         super.viewWillDisappear(animated)
         setBackButtonTitle()
     }
-
+    
     //MARK: UI Configuration's Methods
     func setUI() {
         setNavigationBar()

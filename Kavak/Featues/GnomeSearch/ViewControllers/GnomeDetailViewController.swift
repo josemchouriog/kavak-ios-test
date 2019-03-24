@@ -40,18 +40,21 @@ class GnomeDetailViewController: UIViewController {
     var scrollViewBounceHeight: CGFloat = 23
     
     //MARK: ViewController's Constants
-    
     /**
-     This constant is the sum of the leading and the trailing space to substract before calculating the height of the text of a label when its content is dynamic
+        This constant is the sum of the leading and the trailing space to substract before calculating the height of the text of a label when its content is dynamic
      
-     ## Important Note ##
-     In this ViewController is being use to calculate the height of the text of the labels lblProfessionsTitle and lblProfessionsInfo which content is dynamic
-     */
-    let leadingAndTrailingSpaceToSubstract: CGFloat = 84
+        ## Important Note ##
+        In this ViewController is being use to calculate the height of the text of the labels lblProfessionsTitle and lblProfessionsInfo which content is dynamic
+    */
+    let leadingAndTrailingSpaceToSubstract: CGFloat = 88
     
     //MARK: ViewController's LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setUI()
         getProfessionsLabelContentHeight()
         getFriendsLabelContentHeight()
@@ -67,14 +70,6 @@ class GnomeDetailViewController: UIViewController {
         changeContentViewHeightConstraint()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        //Set the NavigationBar in the proper state for the previous ViewController
-        navigationController?.navigationBar.setBackgroundImage(nil, for: UIBarMetrics.default)
-        navigationController?.navigationBar.shadowImage = nil
-    }
-    
     //MARK: UI Configuration's Methods
     func setUI() {
         setNavigationBar()
@@ -83,46 +78,50 @@ class GnomeDetailViewController: UIViewController {
     }
     
     func setNavigationBar() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navigationController?.navigationBar.shadowImage = UIImage()
+        setNavigationBar(color: UIColor.white)
         setNavigationBar(title: Constants.ViewControllerNavigationTitle.GnomeDetail)
     }
     
     func setUserData() {
         imgProfilePicture.setImageFromUrl(string: gnome?.picture, placeholderImageName: Constants.Icon.icWelcomeGnome)
         
-        lblName.text = gnome?.name != nil ? gnome?.name: "It seems that this gnome does not have a name"
+        lblName.text = gnome?.name != nil ? gnome?.name: "\(Constants.ProfileMessage.NoName)"
         
         if let age = gnome?.age {
-            lblAge.text = String(describing: age) + " years old"
+            lblAge.text = "\(String(describing: age)) \(Constants.ProfileMessage.Age)"
         } else {
-             lblAge.text = "This gnome does not want us to know its age"
+             lblAge.text = "\(Constants.ProfileMessage.NoAge)"
         }
         
         if let weight =  gnome?.weight {
-            lblWeightInfo.text = String.localizedStringWithFormat("%.2f %@",weight, "Kgs")
+            lblWeightInfo.text = "\(weight.roundTo(places: 2)) \(Constants.Measurement.Kilograms)"
         } else {
-            lblWeightInfo.text = "0"
+            lblWeightInfo.text = "\(Constants.ProfileMessage.ZeroValue) \(Constants.Measurement.Kilograms)"
         }
         
         if let height =  gnome?.height {
-            lblHeightInfo.text = String.localizedStringWithFormat("%.2f %@",height, "Cms")
+            if height < 100 {
+                lblHeightInfo.text = "\(height.roundTo(places: 2, dividedBy: 100)) \(Constants.Measurement.Centimeters)"
+            } else {
+                lblHeightInfo.text = "\(height.roundTo(places: 2, dividedBy: 100)) \(Constants.Measurement.Meters)"
+            }
+           
         } else {
-            lblWeightInfo.text = "0"
+            lblWeightInfo.text = "\(Constants.ProfileMessage.ZeroValue) \(Constants.Measurement.Centimeters)"
         }
         
-        lblHairInfo.text = gnome?.hairColor != nil ? gnome?.hairColor: "This gnome does not want us to know its hair color"
+        lblHairInfo.text = gnome?.hairColor != nil ? gnome?.hairColor: "\(Constants.ProfileMessage.NoHairColor)"
        
         if let professions = gnome?.professions, !professions.isEmpty  {
             lblProfessionsInfo.text = professions.joined(separator:", ")
         } else {
-            lblProfessionsInfo.text = "This gnome is not working right now, but he is trying hard to get a job"
+            lblProfessionsInfo.text = "\(Constants.ProfileMessage.NoProfession)"
         }
         
         if let friends = gnome?.friends, !friends.isEmpty  {
             lblFriendsInfo.text = friends.joined(separator:", ")
         } else {
-            lblProfessionsInfo.text = "This gnome does not seem very sociable because he has no friends"
+            lblFriendsInfo.text = "\(Constants.ProfileMessage.NoFriend)"
         }
     }
     
@@ -144,21 +143,21 @@ class GnomeDetailViewController: UIViewController {
     }
     
     /**
-     This method adjusts the height of the ContentView inside of the ScrollView with the total height of the ScrollView including the bounce defined.
+        This method adjusts the height of the ContentView inside of the ScrollView with the total height of the ScrollView including the bounce defined.
      
-     ## Important Note ##
-     It is called after the ScrollView's height is updated.
-     */
+        ## Important Note ##
+        It is called after the ScrollView's height is updated.
+    */
     func changeContentViewHeightConstraint() {
         self.contentViewHeightConstraint.constant = scrollView.contentSize.height -  scrollView.bounds.size.height
     }
     
     /**
-     This method allows to get the proper height that the ScrollView should have in order to fit accordingly the whole content of the Profile Info Section.
+        This method allows to get the proper height that the ScrollView should have in order to fit accordingly the whole content of the Profile Info Section.
      
-     ## Important Note ##
-     It adds up the static content, the dynamic content and the bounce height defined.
-     */
+        ## Important Note ##
+        It adds up the static content, the dynamic content and the bounce height defined.
+    */
     func getScrollViewContentHeight() -> CGFloat {
         return scrollViewStaticContentHeight + getScrollViewDynamicContentHeight() + scrollViewBounceHeight
     }

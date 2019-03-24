@@ -25,12 +25,12 @@ class WelcomeViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.isHidden = false
+        navigationController?.navigationBar.isHidden = false
     }
     
     //MARK: UI Configuration's Methods
     func setUI() {
-        self.navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
     }
     
     func gotoGnomesSearchTableViewController() {
@@ -38,7 +38,7 @@ class WelcomeViewController: UIViewController {
         
         if newViewController != nil {
             newViewController?.gnomesArray = self.gnomesArray
-            self.navigationController?.pushViewController(newViewController!, animated: true)
+            navigationController?.pushViewController(newViewController!, animated: true)
         }
     }
     

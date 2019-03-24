@@ -31,9 +31,9 @@ class GnomeSearchTableViewCell: UITableViewCell {
     func setCellData(array: [Gnome], row: Int) {
         lblName.text = array[row].name != nil ? array[row].name: ""
         if let age = array[row].age {
-            lblAge.text = String(describing: age) + " years old"
+            lblAge.text = "\(String(describing: age)) \(Constants.ProfileMessage.Age)"
         } else {
-            lblAge.text = "0"
+            lblAge.text = "\(Constants.ProfileMessage.ZeroValue)"
         }
         picture.setImageFromUrl(string: array[row].picture, placeholderImageName: Constants.Icon.icPlaceHolderGnome)
     }
